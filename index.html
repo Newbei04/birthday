@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Krisha Mae! 🎂</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Stage 0: Welcome -->
+        <div class="stage active" id="stage0">
+            <h1>🎉 HAPPY BIRTHDAY KRISHA MAE! 🎉</h1>
+            <div class="emoji-large">🎂</div>
+            <p style="font-size: 1.5em; margin: 20px 0; color: #ff6b9d; font-weight: bold;">
+                Get ready for some birthday FUN!
+            </p>
+            <p style="font-size: 1.2em; color: #666;">
+                Click the button to start your special day adventure!
+            </p>
+            <button onclick="nextStage(1)">LET'S PARTY! 🎊</button>
+        </div>
+
+        <!-- Stage 1: Pop the Balloons -->
+        <div class="stage" id="stage1">
+            <h1>Pop ALL the Balloons! 🎈</h1>
+            <p style="font-size: 1.2em; margin: 20px 0;">Click each balloon to pop it!</p>
+            <div class="balloon-game">
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+                <div class="balloon" onclick="popBalloon(this)">🎈</div>
+            </div>
+            <p id="balloon-count" style="font-size: 1.3em; color: #ff6b9d; font-weight: bold;">Balloons left: 6</p>
+        </div>
+
+        <!-- Stage 2: Open Gifts -->
+        <div class="stage" id="stage2">
+            <h1>Choose Your Gifts! 🎁</h1>
+            <p style="font-size: 1.2em; margin: 20px 0;">Click on each gift to see what's inside!</p>
+            <div>
+                <div class="gift-box" onclick="openGift(this, '💖 YOU ARE AMAZING! 💖')">🎁</div>
+                <div class="gift-box" onclick="openGift(this, '✨ YOU DESERVE THE WORLD! ✨')">🎁</div>
+                <div class="gift-box" onclick="openGift(this, '🌟 YOU LIGHT UP EVERY ROOM! 🌟')">🎁</div>
+            </div>
+            <div id="gift-messages" style="margin: 20px 0;"></div>
+            <button id="next-after-gifts" class="hidden" onclick="nextStage(3)">CONTINUE THE FUN! 🎊</button>
+        </div>
+
+        <!-- Stage 3: Blow the Candles -->
+        <div class="stage" id="stage3">
+            <h1>Make a Wish & Blow the Candles! 🕯️</h1>
+            <p style="font-size: 1.2em; margin: 20px 0;">Click each candle to blow it out!</p>
+            <div class="emoji-large">🎂</div>
+            <div class="cake-candles">
+                <div class="candle" onclick="blowCandle(this)">🕯️</div>
+                <div class="candle" onclick="blowCandle(this)">🕯️</div>
+                <div class="candle" onclick="blowCandle(this)">🕯️</div>
+                <div class="candle" onclick="blowCandle(this)">🕯️</div>
+                <div class="candle" onclick="blowCandle(this)">🕯️</div>
+            </div>
+            <p id="candle-message" style="font-size: 1.3em; color: #ff6b9d; font-weight: bold;"></p>
+        </div>
+
+        <!-- Stage 4: Spin for Surprises -->
+        <div class="stage" id="stage4">
+            <h1>Pick Your Surprise! 🎊</h1>
+            <p style="font-size: 1.2em; margin: 20px 0;">Click any box to reveal your surprise!</p>
+            <div class="spin-wheel">
+                <div class="wheel-option" onclick="revealSurprise(this, '🌈 You bring COLOR to life!')">?</div>
+                <div class="wheel-option" onclick="revealSurprise(this, '🎵 Your laugh is MUSIC!')">?</div>
+                <div class="wheel-option" onclick="revealSurprise(this, '☀️ You BRIGHTEN every day!')">?</div>
+                <div class="wheel-option" onclick="revealSurprise(this, '💝 You are LOVED beyond measure!')">?</div>
+            </div>
+            <button id="final-button" class="hidden" onclick="nextStage(5)">ONE MORE SURPRISE! 🎉</button>
+        </div>
+
+        <!-- Final Stage -->
+        <div class="stage" id="stage5">
+            <h1>🎉 HAPPY BIRTHDAY KRISHA MAE! 🎉</h1>
+            <div class="emoji-large">🎂💝🌟</div>
+            <div class="message-box">
+                <p class="surprise-text">
+                    <strong>Today is YOUR day to SHINE!</strong><br><br>
+                    You are incredible, amazing, and absolutely wonderful!<br>
+                    May this year bring you endless laughter, unforgettable memories, and dreams come true! 🌈<br><br>
+                    Thank you for being YOU - the world is brighter because of you! ✨<br><br>
+                    Here's to making this the BEST BIRTHDAY EVER! 🥳<br><br>
+                    <strong style="font-size: 1.3em; color: #ff6b9d;">
+                        HAPPY BIRTHDAY! 🎊💖🎈
+                    </strong>
+                </p>
+            </div>
+            <button onclick="celebrate()">CELEBRATE! 🎉</button>
+        </div>
+    </div>
+</body>
+</html>
