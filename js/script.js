@@ -1,14 +1,14 @@
 const photoUrls = [
-    '/birthday/images/photo1.jpg',
-    '/birthday/images/photo2.jpg',
-    '/birthday/images/photo3.jpg',
-    '/birthday/images/photo4.jpg',
-    '/birthday/images/photo5.jpg',
-    '/birthday/images/photo6.jpg',
-    '/birthday/images/photo7.jpg',
-    '/birthday/images/photo8.jpg',
-    '/birthday/images/photo9.jpg',
-    '/birthday/images/photo10.jpg'
+    'birthday/images/photo1.jpg',
+    'birthday/images/photo2.jpg',
+    'birthday/images/photo3.jpg',
+    'birthday/images/photo4.jpg',
+    'birthday/images/photo5.jpg',
+    'birthday/images/photo6.jpg',
+    'birthday/images/photo7.jpg',
+    'birthday/images/photo8.jpg',
+    'birthday/images/photo9.jpg',
+    'birthday/images/photo10.jpg'
 ];
 
 let currentStage = 0;
